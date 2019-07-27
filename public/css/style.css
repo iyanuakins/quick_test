@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../img/bg1.jpg');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color:rgb(46, 45, 45);
+  opacity: 0.9;
+}
+
+label {
+  font-weight: bold;
+}
+
+.centralise {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.login {
+  margin: auto 0;
+  padding-top: 5vh;
+}
+
+.register {
+  margin: auto 0; 
+}
+
+.btn{
+  width: 100%;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+}

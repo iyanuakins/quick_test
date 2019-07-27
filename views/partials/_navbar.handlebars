@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-success mb-3 text-white">
+    
+      {{#if user}}
+      <div class="container text-white">
+        <a class="navbar-brand" href="/user/dashboard">Quick Test</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-2">
+          <a class="nav-link btn btn-outline-primary" href="/user/profile">Edit Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-danger" href="/user/logout">Logout</a>
+        </li>
+      </ul>
+      {{else}}
+      <div class="container text-white">
+        <a class="navbar-brand" href="/">Quick Test</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="/login" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="/register" class="nav-link">Register</a>
+        </li>
+      </ul>
+      {{/if}}
+    </div>
+  </div>
+</nav>

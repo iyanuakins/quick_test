@@ -1,0 +1,26 @@
+<div class="row register mt-5">
+  <div class="col-md-6 mx-auto">
+    <div class="card card-body">
+      <h3 class="text-center">Edit Profile</h3>
+      {{> _msg}}
+      {{> _errors}}
+      <p><strong class="text-warning text-center">Note: If you don't want to change your picture leave it blank</strong></p>
+      <form action="/user/profileedit" method="POST">
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <input type="text" name="name" class="form-control" value="{{user.name}}" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" name='email' value="{{user.email}}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="picture"> Upload Image</label>
+          <input type="file" name="picture" class="form-control" value="{{user.picture}}">
+        </div>
+        <button type="submit" class="btn btn-success lb">Update Profile</button>
+        <p class="text-center mt-2"><a href="/user/changepassword">Change Password</a></p>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="row login">
+  <div class="col-md-8 mx-auto centralise">
+    <div class="card card-body login-body">
+      <h3 class="text-center">Welcome {{user.name}}, below are your profile details</h3>
+      {{> _msg}}
+      {{> _errors}}
+      <div class="row mt-5">
+          <div class="col-md-4">
+              <p>Picture: {{user.picture}}</p>
+          </div>
+          <div class="col-md-8">
+            <p><strong>Name: </strong> {{user.name}}</p>
+            <p><strong>Email: </strong> {{user.email}}</p>
+            <a href="/user/profile" class="btn btn-success btn-sm">Edit Profile</a>
+          </div>
+      </div>
+        
+        
+    </div>
+  </div>
+</div>
